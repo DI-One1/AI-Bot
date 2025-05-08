@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('makanan.png') no-repeat center center fixed; /* Mengubah latar belakang ke .png */
+  background-size: cover; /* Gambar mengisi seluruh halaman */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow:show;
+}
+
+.bot-container {
+  background: rgba(255, 255, 255, 0.8); /* Memberikan latar belakang putih semi-transparan agar teks lebih mudah dibaca */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+#output {
+  min-height: 100px;
+  background: #fafafa;
+  border: 1.5px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"] {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #888;
+  box-shadow: 0 0 0 3px rgba(136, 136, 136, 0.15);
+}
+
+button {
+  padding: 0.7rem 1.1rem;
+  background: #ee9715;
+  color: white;
+  border: none;
+  border-radius: 999px; /* Membuat bentuk oval */
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.5s ease;
+}
+
+
+button:hover {
+  background: #cc0000;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#provinceImage {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#provinceImage img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
